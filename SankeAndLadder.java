@@ -9,6 +9,7 @@ public class SankeAndLadder {
         final int NOPLAY = 0;
         int positionCount = 0;
         int checkOption = 0;
+        int diceCount = 0;
 
         System.out.println("Welcome to Snake and Ladder Program on Master Branch");
         System.out.println("Inintial position of the player1 is at 0");
@@ -30,7 +31,9 @@ public class SankeAndLadder {
                     positionCount = 0;
                 }
             }
+            diceCount++;
         }
+        System.out.println("Number of times player rolls the dice "+diceCount);
         System.out.println("player is position "+positionCount);
     }
 }
